@@ -234,3 +234,30 @@
             </div>
         </section>
     </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>© 2025 Dr. Hanwant Singh. Hosted on <a href="https://pages.github.com" class="text-white" target="_blank">GitHub Pages</a>.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N7jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function togglePublications() {
+            const pubList = document.getElementById('publicationList');
+            pubList.style.display = pubList.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Fade-in animation on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
+</body>
+</html>
