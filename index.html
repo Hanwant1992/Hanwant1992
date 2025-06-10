@@ -16,7 +16,7 @@
 <body>
     <header class="hero-section text-white text-center py-5">
         <div class="container">
-            <img src="profile.jpg" alt="Dr. Hanwant Singh" class="profile-img rounded-circle mb-3" onerror="this.src='https://via.placeholder.com/150?text=Profile'">
+            <img src="profile.jpg" alt="Dr. Hanwant Singh in Lab" class="profile-img rounded-circle mb-3" onerror="this.src='https://via.placeholder.com/150?text=Profile'">
             <h1 class="display-4">Dr. Hanwant Singh</h1>
             <p class="lead">Alexander von Humboldt PostDoc Fellow, Centre of Molecular Genetics, University of Bremen</p>
             <p class="contact-info">
@@ -211,7 +211,7 @@
             <h2><i class="fas fa-award me-2"></i>Awards and Grants</h2>
             <div class="card p-4">
                 <div class="award">
-                    <p><strong>International Travel Grant</strong>, SERB, DST, New Delhi, to attend the 4th International Conference on Bioresources Technology, Lake Garda, Italy, 14–17 May 2023.</p>
+                    <p><strong>International Travel Grant</strong>, SERB, DST, New Delhi, to attend the 4th International Conference on Bioresources Technology for Bioenergy, Bioproducts, and Environmental Sustainability, Lake Garda, Italy, 14–17 May 2023.</p>
                 </div>
             </div>
         </section>
@@ -220,7 +220,7 @@
             <h2><i class="fas fa-microphone me-2"></i>Invited Lectures</h2>
             <div class="card p-4">
                 <div class="lecture">
-                    <p><strong>R.N.T. P.G. College, Kapasan</strong>, 10 Jan 2021, on “Transcription in prokaryotes: an overview”.</p>
+                    <p><strong>R.N.T. P.G. College, Kapasan</strong>, 10 Jan 2021, on “Transcription in prokaryotes: an overview.”</p>
                 </div>
             </div>
         </section>
@@ -234,30 +234,3 @@
             </div>
         </section>
     </main>
-
-    <footer class="bg-dark text-white text-center py-4">
-        <p>© 2025 Dr. Hanwant Singh. Hosted on <a href="https://pages.github.com" class="text-white" target="_blank">GitHub Pages</a>.</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-        function togglePublications() {
-            const pubList = document.getElementById('publicationList');
-            pubList.style.display = pubList.style.display === 'none' ? 'block' : 'none';
-        }
-
-        // Fade-in animation on scroll
-        document.addEventListener('DOMContentLoaded', () => {
-            const sections = document.querySelectorAll('.fade-in');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, { threshold: 0.1 });
-            sections.forEach(section => observer.observe(section));
-        });
-    </script>
-</body>
-</html>
